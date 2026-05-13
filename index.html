@@ -3,56 +3,127 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agência Zero 18 | Publicidade & Propaganda</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>Agência Zero 18 | Marketing Médico & Saúde</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">ZERO<span>18</span></div>
+  <div class="nav-logo">
+    <img src="LOGO_AGENCIA_ZERO_18_-_OFICIAL___1_.png" alt="Agência Zero 18" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+    <span class="nav-logo-fallback">ZERO<span>18</span></span>
+  </div>
   <div class="nav-links">
     <a href="#servicos">Serviços</a>
     <a href="#sobre">Sobre</a>
     <a href="#equipe">Equipe</a>
     <a href="#contato">Contato</a>
   </div>
-  <a href="https://api.whatsapp.com/send?phone=5518991270645&text=Olá! Vim pelo WebSite da Agência, gostaria de mais informações!" class="nav-cta" target="_blank">Falar com a gente</a>
+  <a href="https://api.whatsapp.com/send?phone=5518991270645&text=Olá! Vim pelo WebSite da Agência, gostaria de mais informações!" class="nav-cta" target="_blank">Diagnóstico Gratuito</a>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-accent-line"></div>
+
   <div class="hero-text">
-    <div class="hero-eyebrow">Agência de Marketing Digital</div>
+    <div class="hero-eyebrow">
+      <span class="eyebrow-dot"></span>
+      Especialistas em Marketing Médico
+    </div>
     <h1 class="hero-title">
-      MUITO MAIS<br>
-      QUE UMA<br>
-      <em>AGÊNCIA</em>
+      MAIS PACIENTES.<br>
+      MAIS AUTORIDADE.<br>
+      <em>RESULTADOS REAIS.</em>
     </h1>
-    <p class="hero-desc">Estratégia, criatividade e performance para fazer o seu negócio crescer de verdade no mundo digital.</p>
+    <p class="hero-desc">Estratégia digital premium para médicos, clínicas e especialistas da saúde que querem crescer com consistência, ética e posicionamento de alto nível.</p>
+    <div class="hero-trust">
+      <div class="trust-item">
+        <div class="trust-val">100<span>+</span></div>
+        <div class="trust-label">Clientes Ativos</div>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <div class="trust-val">R$500k</div>
+        <div class="trust-label">Em Tráfego Gerenciado</div>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <div class="trust-val">5<span>+</span></div>
+        <div class="trust-label">Anos de Mercado</div>
+      </div>
+    </div>
     <div class="hero-actions">
-      <a href="https://api.whatsapp.com/send?phone=5518991270645" class="btn-primary">#VEMPRAZERO18</a>
+      <a href="#form" class="btn-primary">Quero mais pacientes</a>
       <a href="#servicos" class="btn-ghost">Ver serviços</a>
     </div>
   </div>
-  <div class="hero-visual">
-    <div class="hero-card fade-in">
-      <div class="hero-card-label">Clientes ativos</div>
-      <div class="hero-card-num">100+</div>
-      <div class="hero-card-sub">Empresas que confiam na Zero18</div>
+
+  <!-- FORM LATERAL -->
+  <div class="hero-form-wrap" id="form">
+    <div class="hero-form-header">
+      <div class="form-badge">✦ Diagnóstico Digital Gratuito</div>
+      <h3 class="form-title">Descubra o potencial da sua clínica</h3>
+      <p class="form-subtitle">Nossa equipe analisa seu cenário e apresenta um plano personalizado sem custo.</p>
     </div>
-    <div class="hero-card-row fade-in fade-delay-1">
-      <div class="hero-card-sm">
-        <div class="hero-card-label">Equipe</div>
-        <div class="hero-card-num">15+</div>
-        <div class="hero-card-sub" style="font-size:0.75rem; opacity:0.45;">profissionais</div>
+    <form class="hero-form" onsubmit="handleFormSubmit(event)">
+      <div class="form-group">
+        <label>Nome completo</label>
+        <input type="text" placeholder="Dr. João Silva" required>
       </div>
-      <div class="hero-card-sm">
-        <div class="hero-card-label">Em tráfego</div>
-        <div class="hero-card-num">500k</div>
-        <div class="hero-card-sub" style="font-size:0.75rem; opacity:0.45;">reais investidos</div>
+      <div class="form-group">
+        <label>WhatsApp com DDD</label>
+        <input type="tel" placeholder="(18) 99999-9999" required>
       </div>
+      <div class="form-group">
+        <label>E-mail profissional</label>
+        <input type="email" placeholder="contato@suaclinica.com.br" required>
+      </div>
+      <div class="form-group">
+        <label>Especialidade / Segmento</label>
+        <select required>
+          <option value="" disabled selected>Selecione sua especialidade</option>
+          <option>Clínica Geral</option>
+          <option>Cardiologia</option>
+          <option>Dermatologia</option>
+          <option>Odontologia</option>
+          <option>Ortopedia</option>
+          <option>Psiquiatria / Psicologia</option>
+          <option>Oftalmologia</option>
+          <option>Ginecologia</option>
+          <option>Pediatria</option>
+          <option>Estética / Saúde & Bem-estar</option>
+          <option>Outra especialidade</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Faturamento mensal da clínica</label>
+        <select required>
+          <option value="" disabled selected>Selecione a faixa</option>
+          <option>Até R$ 10.000</option>
+          <option>R$ 10.000 – R$ 30.000</option>
+          <option>R$ 30.000 – R$ 80.000</option>
+          <option>R$ 80.000 – R$ 200.000</option>
+          <option>Acima de R$ 200.000</option>
+        </select>
+      </div>
+      <button type="submit" class="form-btn">
+        <span>Quero meu diagnóstico gratuito</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+      <p class="form-privacy">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Seus dados estão seguros. Não compartilhamos suas informações.
+      </p>
+    </form>
+    <div class="form-success" id="formSuccess" style="display:none;">
+      <div class="success-icon">✓</div>
+      <h3>Recebemos seu contato!</h3>
+      <p>Nossa equipe entrará em contato em até 24h úteis com seu diagnóstico personalizado.</p>
     </div>
   </div>
 </section>
@@ -60,60 +131,95 @@
 <!-- TICKER -->
 <div class="ticker">
   <div class="ticker-track">
-    <div class="ticker-item">GESTÃO DE REDES <span>✦</span> IDENTIDADE VISUAL <span>✦</span> META ADS <span>✦</span> GOOGLE ADS <span>✦</span> PRODUÇÃO AUDIOVISUAL <span>✦</span> CRIAÇÃO DE SITES <span>✦</span> TIK TOK ADS <span>✦</span> REDAÇÃO <span>✦</span> GOOGLE MEU NEGÓCIO <span>✦</span></div>
-    <div class="ticker-item">GESTÃO DE REDES <span>✦</span> IDENTIDADE VISUAL <span>✦</span> META ADS <span>✦</span> GOOGLE ADS <span>✦</span> PRODUÇÃO AUDIOVISUAL <span>✦</span> CRIAÇÃO DE SITES <span>✦</span> TIK TOK ADS <span>✦</span> REDAÇÃO <span>✦</span> GOOGLE MEU NEGÓCIO <span>✦</span></div>
+    <div class="ticker-item">GESTÃO DE REDES <span>✦</span> IDENTIDADE VISUAL MÉDICA <span>✦</span> META ADS <span>✦</span> GOOGLE ADS <span>✦</span> PRODUÇÃO AUDIOVISUAL <span>✦</span> CRIAÇÃO DE SITES <span>✦</span> TIKTOK ADS <span>✦</span> REDAÇÃO ESTRATÉGICA <span>✦</span> GOOGLE MEU NEGÓCIO <span>✦</span> MARKETING MÉDICO <span>✦</span></div>
+    <div class="ticker-item">GESTÃO DE REDES <span>✦</span> IDENTIDADE VISUAL MÉDICA <span>✦</span> META ADS <span>✦</span> GOOGLE ADS <span>✦</span> PRODUÇÃO AUDIOVISUAL <span>✦</span> CRIAÇÃO DE SITES <span>✦</span> TIKTOK ADS <span>✦</span> REDAÇÃO ESTRATÉGICA <span>✦</span> GOOGLE MEU NEGÓCIO <span>✦</span> MARKETING MÉDICO <span>✦</span></div>
   </div>
 </div>
 
+<!-- PROPOSTA DE VALOR -->
+<section class="valor-section">
+  <div class="valor-inner">
+    <div class="valor-text">
+      <div class="section-label">Por que a Zero 18</div>
+      <h2 class="section-title fade-in">NÃO SOMOS UMA AGÊNCIA COMUM.</h2>
+      <p class="fade-in fade-delay-1">Somos especialistas no segmento da saúde. Entendemos as restrições éticas do CFM, o comportamento do paciente digital e o que realmente gera resultados para clínicas e consultórios.</p>
+      <p class="fade-in fade-delay-1">Cada estratégia é desenvolvida com base em dados, construída com rigor e executada com criatividade — para que sua clínica seja referência onde o paciente certo está.</p>
+    </div>
+    <div class="valor-cards">
+      <div class="valor-card fade-in">
+        <div class="valor-icon">◎</div>
+        <h4>Estratégia com ética médica</h4>
+        <p>Respeitamos as normas do CFM e CRO em cada peça criada, protegendo sua reputação.</p>
+      </div>
+      <div class="valor-card fade-in fade-delay-1">
+        <div class="valor-icon">⬡</div>
+        <h4>Foco em geração de pacientes</h4>
+        <p>Não vendemos curtidas. Construímos funis que transformam alcance em consultas agendadas.</p>
+      </div>
+      <div class="valor-card fade-in fade-delay-2">
+        <div class="valor-icon">◈</div>
+        <h4>Posicionamento premium</h4>
+        <p>Construímos autoridade digital que justifica seus honorários e atrai o paciente ideal.</p>
+      </div>
+      <div class="valor-card fade-in fade-delay-3">
+        <div class="valor-icon">◉</div>
+        <h4>Equipe especializada</h4>
+        <p>Profissionais dedicados exclusivamente ao seu projeto, com suporte próximo e transparente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- SERVIÇOS -->
 <section id="servicos" class="servicos">
-  <div class="section-label">O que fazemos</div>
-  <h2 class="section-title fade-in">SERVIÇOS</h2>
+  <div class="section-label">O que oferecemos</div>
+  <h2 class="section-title fade-in">SOLUÇÕES PARA A ÁREA DA SAÚDE</h2>
+  <p class="servicos-subtitle fade-in fade-delay-1">Do posicionamento de marca ao tráfego pago, entregamos o ecossistema digital completo para sua clínica crescer.</p>
   <div class="servicos-grid">
     <div class="servico-card fade-in">
       <div class="servico-num">01</div>
       <div class="servico-title">GESTÃO DE REDES SOCIAIS</div>
-      <p class="servico-desc">Estratégia e gerenciamento completo das suas redes com criação de conteúdo relevante e engajador.</p>
+      <p class="servico-desc">Conteúdo educativo, estratégico e ético que posiciona você como referência no seu segmento e gera conexão real com futuros pacientes.</p>
     </div>
     <div class="servico-card fade-in fade-delay-1">
       <div class="servico-num">02</div>
-      <div class="servico-title">IDENTIDADE VISUAL</div>
-      <p class="servico-desc">Dê uma cara nova e moderna ao seu negócio. Criamos marcas que se destacam e ficam na memória.</p>
+      <div class="servico-title">IDENTIDADE VISUAL MÉDICA</div>
+      <p class="servico-desc">Marcas que transmitem confiança, autoridade e sofisticação — fundamentais para clínicas que querem atrair o paciente certo.</p>
     </div>
     <div class="servico-card fade-in fade-delay-2">
       <div class="servico-num">03</div>
-      <div class="servico-title">CRIAÇÃO DE SITES</div>
-      <p class="servico-desc">Conecte sua empresa ao mundo com sites modernos, rápidos e otimizados para resultados.</p>
+      <div class="servico-title">SITES E LANDING PAGES</div>
+      <p class="servico-desc">Sites profissionais otimizados para conversão, SEO e experiência do paciente — do primeiro clique ao agendamento.</p>
     </div>
     <div class="servico-card fade-in">
       <div class="servico-num">04</div>
-      <div class="servico-title">FOTOS E VÍDEOS</div>
-      <p class="servico-desc">Equipe de produção e edição própria para criação de conteúdo audiovisual de alto impacto.</p>
+      <div class="servico-title">FOTOS E VÍDEOS CLÍNICOS</div>
+      <p class="servico-desc">Produção audiovisual própria com linguagem premium que eleva a percepção de valor da sua clínica e humaniza sua marca.</p>
     </div>
     <div class="servico-card fade-in fade-delay-1">
       <div class="servico-num">05</div>
-      <div class="servico-title">META ADS</div>
-      <p class="servico-desc">Campanhas estratégicas no Facebook e Instagram com foco total em performance e ROI.</p>
+      <div class="servico-title">META ADS PARA SAÚDE</div>
+      <p class="servico-desc">Campanhas no Facebook e Instagram com segmentação precisa para alcançar o perfil exato de paciente que você deseja atender.</p>
     </div>
     <div class="servico-card fade-in fade-delay-2">
       <div class="servico-num">06</div>
-      <div class="servico-title">GOOGLE ADS</div>
-      <p class="servico-desc">Anúncios no Google garantindo que sua empresa apareça para quem está pronto para comprar.</p>
+      <div class="servico-title">GOOGLE ADS MÉDICO</div>
+      <p class="servico-desc">Anúncios para capturar pacientes no momento em que pesquisam por você — intenção de compra máxima e ROI mensurável.</p>
     </div>
-    <div class="servico-card fade-in fade-delay-2">
+    <div class="servico-card fade-in">
       <div class="servico-num">07</div>
-      <div class="servico-title">TIK TOK ADS</div>
-      <p class="servico-desc">Criamos campanhas estratégicas no TikTok para aumentar alcance, engajamento e reconhecimento da sua marca.</p>
+      <div class="servico-title">TIKTOK ADS</div>
+      <p class="servico-desc">Alcance uma nova geração de pacientes com criatividade, autenticidade e campanhas estratégicas que viralizam com propósito.</p>
     </div>
-    <div class="servico-card fade-in fade-delay-2">
+    <div class="servico-card fade-in fade-delay-1">
       <div class="servico-num">08</div>
       <div class="servico-title">GOOGLE MEU NEGÓCIO</div>
-      <p class="servico-desc">Otimizamos seu perfil no Google para destacar sua empresa e atrair mais clientes da sua região.</p>
+      <p class="servico-desc">Otimização completa do seu perfil local para sua clínica aparecer no topo quando o paciente pesquisa por especialistas da sua cidade.</p>
     </div>
     <div class="servico-card fade-in fade-delay-2">
       <div class="servico-num">09</div>
-      <div class="servico-title">REDAÇÃO</div>
-      <p class="servico-desc">Produzimos textos estratégicos e persuasivos para fortalecer sua marca e conectar sua empresa ao público certo.</p>
+      <div class="servico-title">REDAÇÃO ESTRATÉGICA</div>
+      <p class="servico-desc">Textos que educam, convencem e convertem — respeitando a linguagem médica e as normas éticas do setor de saúde.</p>
     </div>
   </div>
 </section>
@@ -123,9 +229,9 @@
   <div class="sobre">
     <div class="sobre-text">
       <div class="section-label">Quem somos</div>
-      <h2 class="section-title fade-in">MUITO MAIS QUE UMA AGÊNCIA DIGITAL</h2>
-      <p class="fade-in fade-delay-1">Somos uma equipe apaixonada por resultados. Nossa missão é transformar a presença digital das empresas com estratégia, criatividade e dados.</p>
-      <p class="fade-in fade-delay-1">Desde criação de conteúdo até gestão de tráfego pago, trabalhamos lado a lado com nossos clientes para garantir crescimento real e sustentável.</p>
+      <h2 class="section-title fade-in">AGÊNCIA ESPECIALIZADA EM SAÚDE E ALTA PERFORMANCE</h2>
+      <p class="fade-in fade-delay-1">A Zero 18 nasceu para transformar a presença digital de quem cuida de pessoas. Com sede em Pirapozinho – SP, atendemos médicos, dentistas, clínicas e especialistas da saúde em todo o Brasil com uma abordagem estratégica, ética e orientada a resultados.</p>
+      <p class="fade-in fade-delay-1">Nossa equipe de 15+ profissionais combina criatividade, tecnologia e profundo conhecimento do mercado da saúde para construir marcas que geram confiança — e consultas agendadas.</p>
       <div class="sobre-nums">
         <div class="sobre-num-item fade-in">
           <div class="sobre-num-val">100+</div>
@@ -133,16 +239,19 @@
         </div>
         <div class="sobre-num-item fade-in fade-delay-1">
           <div class="sobre-num-val">15+</div>
-          <div class="sobre-num-label">Pessoas na equipe</div>
+          <div class="sobre-num-label">Especialistas na equipe</div>
         </div>
         <div class="sobre-num-item fade-in fade-delay-2">
-          <div class="sobre-num-val">500k</div>
-          <div class="sobre-num-label">Em tráfego pago</div>
+          <div class="sobre-num-val">R$500k</div>
+          <div class="sobre-num-label">Em tráfego gerenciado</div>
         </div>
       </div>
     </div>
     <div class="sobre-visual fade-in fade-delay-1">
-      <div class="sobre-img-main">ZERO18</div>
+      <div class="sobre-img-main">
+        <img src="LOGO_AGENCIA_ZERO_18_-_OFICIAL___1_.png" alt="Zero 18" class="sobre-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="sobre-logo-fallback" style="display:none;">ZERO18</span>
+      </div>
       <div class="sobre-img-row">
         <div class="sobre-img-sm">Pirapozinho · SP</div>
         <div class="sobre-img-sm">Desde 2020</div>
@@ -156,52 +265,49 @@
   <div class="section-label">Quem faz acontecer</div>
   <h2 class="section-title fade-in">A EQUIPE</h2>
   <div class="equipe-grid">
-    
-    <!-- JULIO - CEO -->
+
     <div class="equipe-card fade-in">
       <div class="equipe-avatar">
         <img src="srcs/IMG_0787.JPG" alt="Julio Henrique" onerror="this.parentNode.innerHTML='JH'">
       </div>
-        <div class="equipe-info">
+      <div class="equipe-info">
         <div class="equipe-nome">Julio Henrique</div>
-        <div class="equipe-cargo">CEO</div>
-        <p class="equipe-bio">Líder visionário que mantém a cultura da empresa sempre evoluindo. Apaixonado por desafios e crescimento com planejamento.</p>
+        <div class="equipe-cargo">CEO & Estrategista</div>
+        <p class="equipe-bio">Líder visionário especializado em crescimento digital para o setor da saúde. Apaixonado por construir marcas médicas que se tornam referência.</p>
       </div>
     </div>
 
-    <!-- ISABELI - GERENTE -->
     <div class="equipe-card fade-in fade-delay-1">
       <div class="equipe-avatar">
         <img src="https://static.wixstatic.com/media/36b329_ead65ce7e28e4c60885b2cea4360f024~mv2.jpg/v1/crop/x_250,y_0,w_1749,h_1749/fill/w_400,h_400,al_c,q_80/photo.jpg" alt="Isabeli Cristina" onerror="this.parentNode.innerHTML='IC'">
       </div>
       <div class="equipe-info">
         <div class="equipe-nome">Isabeli Cristina</div>
-        <div class="equipe-cargo">Gerente</div>
-        <p class="equipe-bio">Responsável por manter toda equipe alinhada com as necessidades e expectativas dos clientes.</p>
+        <div class="equipe-cargo">Gerente de Contas</div>
+        <p class="equipe-bio">Responsável por garantir que cada cliente receba atenção e resultados à altura das suas expectativas. O elo entre estratégia e execução.</p>
       </div>
     </div>
 
-    <!-- FERNANDA - FINANCEIRO -->
     <div class="equipe-card fade-in fade-delay-2">
       <div class="equipe-avatar">
         <img src="srcs/Captura de tela 2026-05-12 140245.png" alt="Fernanda Vila" onerror="this.parentNode.innerHTML='FV'">
       </div>
       <div class="equipe-info">
         <div class="equipe-nome">Fernanda Vila</div>
-        <div class="equipe-cargo">Financeiro</div>
-        <p class="equipe-bio">Apaixonada por organização e números, garante que os processos financeiros da Zero18 estejam sempre em dia.</p>
+        <div class="equipe-cargo">Diretora Financeira</div>
+        <p class="equipe-bio">Apaixonada por organização e precisão, garante que os processos financeiros da Zero 18 operem com total transparência e saúde.</p>
       </div>
     </div>
-  </div>
 
+  </div>
 </section>
 
 <!-- CONTATO -->
 <section id="contato">
   <div class="contato-inner">
-    <div class="section-label">Vamos conversar</div>
+    <div class="section-label">Vamos crescer juntos</div>
     <h2 class="section-title fade-in">#VEMPRAZERO18</h2>
-    <p class="contato-desc fade-in fade-delay-1">Temos a solução certa para o seu negócio. Entre em contato agora e descubra como podemos crescer juntos.</p>
+    <p class="contato-desc fade-in fade-delay-1">Sua clínica merece uma estratégia digital à altura dos serviços que você entrega. Fale com nossa equipe e descubra como podemos crescer juntos.</p>
     <div class="contato-cta-row fade-in fade-delay-2">
       <a href="https://api.whatsapp.com/send?phone=5518991270645&text=Olá! Vim pelo WebSite da Agência, gostaria de mais informações!" class="btn-primary" target="_blank">Falar pelo WhatsApp</a>
       <a href="mailto:atendimento@zero18.com.br" class="btn-ghost" target="_blank">Enviar e-mail</a>
@@ -229,20 +335,59 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">ZERO<span>18</span></div>
-  <div>© 2026 Agência Zero 18 · Pirapozinho, SP</div>
+  <div class="footer-logo">
+    <img src="LOGO_AGENCIA_ZERO_18_-_OFICIAL___1_.png" alt="Zero 18" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+    <span class="footer-logo-text" style="display:none;">ZERO<span>18</span></span>
+  </div>
+  <div>© 2026 Agência Zero 18 · Pirapozinho, SP · Especialistas em Marketing Médico</div>
   <div class="footer-social">
-    <a href="https://www.instagram.com/agenciazero18/" style="opacity:0.6" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com/Agenciazero18/" style="opacity:0.6" target="_blank">Facebook</a>
-    <a href="https://api.whatsapp.com/send?phone=5518991270645" style="opacity:0.6" target="_blank">WhatsApp</a>
+    <a href="https://www.instagram.com/agenciazero18/" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/Agenciazero18/" target="_blank">Facebook</a>
+    <a href="https://api.whatsapp.com/send?phone=5518991270645" target="_blank">WhatsApp</a>
   </div>
 </footer>
 
+<!-- WHATSAPP FLOAT -->
+<a href="https://api.whatsapp.com/send?phone=5518991270645&text=Olá! Vim pelo WebSite da Agência, gostaria de mais informações!" class="whatsapp-float" target="_blank" title="Fale pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
 <script>
+  // Fade in observer
   const obs = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.12 });
   document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+  // Form submit
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('.form-btn');
+    btn.innerHTML = '<span>Enviando...</span>';
+    btn.disabled = true;
+    setTimeout(() => {
+      form.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'flex';
+      // Build whatsapp message from form data
+      const inputs = form.querySelectorAll('input, select');
+      const name = inputs[0].value;
+      const phone = inputs[1].value;
+      const email = inputs[2].value;
+      const specialty = inputs[3].value;
+      const revenue = inputs[4].value;
+      const msg = encodeURIComponent(`Olá! Preenchi o formulário do site.\nNome: ${name}\nTelefone: ${phone}\nE-mail: ${email}\nEspecialidade: ${specialty}\nFaturamento: ${revenue}`);
+      window.open(`https://api.whatsapp.com/send?phone=5518991270645&text=${msg}`, '_blank');
+    }, 1000);
+  }
+
+  // Nav scroll effect
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
 </script>
 </body>
 </html>
