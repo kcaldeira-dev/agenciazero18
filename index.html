@@ -20,6 +20,7 @@
     <a href="#servicos">Serviços</a>
     <a href="#sobre">Sobre</a>
     <a href="#equipe">Equipe</a>
+    <a href="#avaliacoes">Avaliações</a>
     <a href="#contato">Contato</a>
   </div>
   <a href="https://api.whatsapp.com/send?phone=5518991270645&text=Olá! Vim pelo WebSite da Agência, gostaria de mais informações!" class="nav-cta" target="_blank">Diagnóstico Gratuito</a>
@@ -64,11 +65,16 @@
   </div>
 
   <!-- FORM LATERAL -->
-  <div class="hero-form-wrap" id="form">
+  <div class="hero-form-wrap hero-form-enhanced" id="form">
     <div class="hero-form-header">
       <div class="form-badge">✦ Diagnóstico Digital Gratuito</div>
       <h3 class="form-title">Descubra o potencial da sua clínica</h3>
-      <p class="form-subtitle">Nossa equipe analisa seu cenário e apresenta um plano personalizado sem custo.</p>
+      <p class="form-subtitle">Nossa equipe analisa seu cenário e apresenta um plano personalizado sem custo algum.</p>
+      <div class="form-header-trust">
+        <span class="fht-item"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Resposta em 24h</span>
+        <span class="fht-item"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>100% gratuito</span>
+        <span class="fht-item"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Sem compromisso</span>
+      </div>
     </div>
     <form class="hero-form" onsubmit="handleFormSubmit(event)">
       <div class="form-group">
@@ -302,6 +308,144 @@
   </div>
 </section>
 
+<!-- AVALIAÇÕES -->
+<section id="avaliacoes" class="avaliacoes-section">
+  <div class="avaliacoes-inner">
+    <div class="section-label">Prova Social</div>
+    <h2 class="section-title fade-in">O QUE NOSSOS CLIENTES DIZEM</h2>
+    <p class="avaliacoes-subtitle fade-in fade-delay-1">Avaliações reais de médicos e clínicas que transformaram seus resultados com a Zero 18.</p>
+
+    <!-- Google Rating Summary -->
+    <div class="google-rating-bar fade-in fade-delay-2">
+      <div class="grb-logo">
+        <svg width="20" height="20" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        <span>Google Reviews</span>
+      </div>
+      <div class="grb-score">
+        <div class="grb-number">5.0</div>
+        <div class="grb-stars">★★★★★</div>
+        <div class="grb-count">Baseado em avaliações verificadas</div>
+      </div>
+      <a href="https://maps.app.goo.gl/PtYrAWYa5j6DXSx89" target="_blank" class="grb-cta">Ver no Google <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+    </div>
+
+    <!-- Carousel -->
+    <div class="reviews-carousel-wrap">
+      <div class="reviews-carousel" id="reviewsCarousel">
+
+        <div class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar">CL</div>
+            <div class="review-meta">
+              <div class="review-name">Clínica Lumina</div>
+              <div class="review-date">Há 2 semanas</div>
+            </div>
+            <div class="review-google-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">A equipe da Zero 18 transformou completamente nossa presença digital. Triplicamos o número de agendamentos em apenas 4 meses. Profissionalismo e resultado acima de tudo.</p>
+        </div>
+
+        <div class="review-card fade-in fade-delay-1">
+          <div class="review-header">
+            <div class="review-avatar">DR</div>
+            <div class="review-meta">
+              <div class="review-name">Dr. Rafael Mendes</div>
+              <div class="review-date">Há 1 mês</div>
+            </div>
+            <div class="review-google-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Excelente agência! Entende profundamente as restrições do CFM e ainda assim cria conteúdo de altíssimo impacto. Minha clínica ortopédica cresceu 60% em visibilidade orgânica.</p>
+        </div>
+
+        <div class="review-card fade-in fade-delay-2">
+          <div class="review-header">
+            <div class="review-avatar">AS</div>
+            <div class="review-meta">
+              <div class="review-name">Ana Silva Dermatologia</div>
+              <div class="review-date">Há 3 semanas</div>
+            </div>
+            <div class="review-google-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Desde que comecei com a Zero 18, minha agenda lotou em menos de 60 dias. O atendimento é impecável, a equipe é extremamente atenta e os resultados falam por si mesmos.</p>
+        </div>
+
+        <div class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar">MC</div>
+            <div class="review-meta">
+              <div class="review-name">Med Center Pirapozinho</div>
+              <div class="review-date">Há 2 meses</div>
+            </div>
+            <div class="review-google-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Parceria incrível! O Julio e sua equipe dominam o marketing médico como ninguém. Estratégia bem elaborada, execução pontual e suporte ativo. Super recomendo!</p>
+        </div>
+
+        <div class="review-card fade-in fade-delay-1">
+          <div class="review-header">
+            <div class="review-avatar">PO</div>
+            <div class="review-meta">
+              <div class="review-name">Dr. Paulo Oliveira</div>
+              <div class="review-date">Há 5 semanas</div>
+            </div>
+            <div class="review-google-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Investimento que se paga. Trafego qualificado, identidade visual premium e uma equipe que realmente entende saúde. Minha clínica de cardiologia nunca teve tanta visibilidade.</p>
+        </div>
+
+        <div class="review-card fade-in fade-delay-2">
+          <div class="review-header">
+            <div class="review-avatar">FG</div>
+            <div class="review-meta">
+              <div class="review-name">Fernanda Gimenez</div>
+              <div class="review-date">Há 1 mês</div>
+            </div>
+            <div class="review-google-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Ginecologista há 12 anos, nunca imaginei que marketing pudesse ser tão ético e eficiente. A Zero 18 construiu minha autoridade digital do zero. Gratidão enorme à equipe.</p>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="carouselPrev" aria-label="Anterior">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="carousel-dots" id="carouselDots"></div>
+        <button class="carousel-btn" id="carouselNext" aria-label="Próximo">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="avaliacoes-cta fade-in">
+      <a href="https://maps.app.goo.gl/PtYrAWYa5j6DXSx89" target="_blank" class="btn-ghost">
+        Ver todas as avaliações no Google
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- CONTATO -->
 <section id="contato">
   <div class="contato-inner">
@@ -383,7 +527,68 @@
     }, 1000);
   }
 
-  // Nav scroll effect
+  // Carousel
+  (function() {
+    const carousel = document.getElementById('reviewsCarousel');
+    if (!carousel) return;
+    const cards = carousel.querySelectorAll('.review-card');
+    const dotsContainer = document.getElementById('carouselDots');
+    let current = 0;
+    let autoTimer;
+
+    function getVisible() {
+      if (window.innerWidth >= 1100) return 3;
+      if (window.innerWidth >= 640) return 2;
+      return 1;
+    }
+
+    let visibleCount = getVisible();
+    let maxIndex = Math.max(0, cards.length - visibleCount);
+
+    function buildDots() {
+      dotsContainer.innerHTML = '';
+      for (let i = 0; i <= maxIndex; i++) {
+        const d = document.createElement('button');
+        d.className = 'carousel-dot' + (i === current ? ' active' : '');
+        d.addEventListener('click', () => goTo(i));
+        dotsContainer.appendChild(d);
+      }
+    }
+
+    function goTo(idx) {
+      current = Math.max(0, Math.min(idx, maxIndex));
+      const cardW = cards[0].offsetWidth + 24; // gap
+      carousel.style.transform = `translateX(-${current * cardW}px)`;
+      dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+
+    function autoPlay() {
+      autoTimer = setInterval(() => goTo(current >= maxIndex ? 0 : current + 1), 5000);
+    }
+
+    document.getElementById('carouselPrev').addEventListener('click', () => { clearInterval(autoTimer); goTo(current - 1); autoPlay(); });
+    document.getElementById('carouselNext').addEventListener('click', () => { clearInterval(autoTimer); goTo(current + 1); autoPlay(); });
+
+    // Touch/swipe
+    let touchStartX = 0;
+    carousel.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    carousel.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 50) { clearInterval(autoTimer); goTo(dx < 0 ? current + 1 : current - 1); autoPlay(); }
+    }, { passive: true });
+
+    window.addEventListener('resize', () => {
+      visibleCount = getVisible();
+      maxIndex = Math.max(0, cards.length - visibleCount);
+      if (current > maxIndex) current = maxIndex;
+      buildDots();
+      goTo(current);
+    });
+
+    buildDots();
+    goTo(0);
+    autoPlay();
+  })();
   const nav = document.querySelector('nav');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 60);

@@ -516,6 +516,118 @@ footer {
 .fade-delay-2 { transition-delay: 0.24s; }
 .fade-delay-3 { transition-delay: 0.36s; }
 
+/* ── FORM ENHANCED ── */
+.hero-form-enhanced {
+  box-shadow: 0 40px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(204,26,26,0.25);
+}
+.hero-form-enhanced .hero-form-header {
+  background: linear-gradient(135deg, rgba(204,26,26,0.12) 0%, rgba(204,26,26,0.04) 50%, transparent 100%);
+  padding: 2.25rem 2.25rem 1.75rem;
+}
+.hero-form-enhanced .form-title { font-size: 1.8rem; }
+.hero-form-enhanced .form-subtitle { opacity: 0.6; font-size: 0.85rem; }
+.form-header-trust {
+  display: flex; gap: 1.25rem; flex-wrap: wrap; margin-top: 1rem;
+}
+.fht-item {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-size: 0.68rem; letter-spacing: 0.5px;
+  color: rgba(245,240,238,0.55); font-weight: 400;
+}
+.fht-item svg { color: var(--laranja); flex-shrink: 0; }
+.hero-form-enhanced .hero-form { padding: 1.75rem 2.25rem 2.25rem; gap: 1.15rem; }
+.hero-form-enhanced .form-group input,
+.hero-form-enhanced .form-group select { padding: 0.9rem 1.1rem; font-size: 0.9rem; }
+.hero-form-enhanced .form-group label { font-size: 0.7rem; opacity: 0.55; }
+.hero-form-enhanced .form-btn {
+  padding: 1.1rem 1.75rem; font-size: 0.88rem; letter-spacing: 0.75px; margin-top: 0.4rem;
+  box-shadow: 0 8px 32px rgba(204,26,26,0.25);
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+.hero-form-enhanced .form-btn:hover { box-shadow: 0 12px 40px rgba(204,26,26,0.4); transform: translateY(-2px); }
+.hero-form-enhanced .form-privacy { opacity: 0.4; font-size: 0.72rem; }
+
+/* ── AVALIAÇÕES ── */
+.avaliacoes-section { background: var(--cinza); padding: 7rem 3rem; overflow: hidden; }
+.avaliacoes-inner { max-width: 1200px; margin: 0 auto; }
+.avaliacoes-subtitle { font-size: 0.95rem; opacity: 0.5; max-width: 520px; line-height: 1.85; margin-bottom: 3rem; }
+
+.google-rating-bar {
+  display: flex; align-items: center; gap: 2.5rem;
+  background: rgba(255,255,255,0.03);
+  border: 0.5px solid rgba(255,255,255,0.08);
+  border-radius: 6px; padding: 1.5rem 2rem; margin-bottom: 3rem;
+  flex-wrap: wrap; position: relative; overflow: hidden;
+}
+.google-rating-bar::before {
+  content: ''; position: absolute; top: 0; left: 0; bottom: 0; width: 2px;
+  background: linear-gradient(180deg, #4285F4, #34A853, #FBBC05, #EA4335);
+}
+.grb-logo { display: flex; align-items: center; gap: 0.6rem; font-size: 0.78rem; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.6; }
+.grb-score { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+.grb-number { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; line-height: 1; color: var(--branco); }
+.grb-stars { color: #FBBC05; font-size: 1.2rem; letter-spacing: 2px; }
+.grb-count { font-size: 0.72rem; opacity: 0.35; letter-spacing: 1px; }
+.grb-cta {
+  margin-left: auto; display: inline-flex; align-items: center; gap: 0.5rem;
+  font-size: 0.72rem; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--laranja); border: 0.5px solid rgba(204,26,26,0.35); border-radius: 2px;
+  padding: 0.6rem 1.2rem; transition: background 0.2s, border-color 0.2s;
+}
+.grb-cta:hover { background: rgba(204,26,26,0.1); border-color: rgba(204,26,26,0.6); }
+
+.reviews-carousel-wrap { position: relative; overflow: hidden; }
+.reviews-carousel {
+  display: flex; gap: 1.5rem;
+  transition: transform 0.55s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform;
+}
+.review-card {
+  flex: 0 0 calc((100% - 3rem) / 3);
+  background: var(--preto); border: 0.5px solid rgba(255,255,255,0.07);
+  border-radius: 6px; padding: 2rem; position: relative; overflow: hidden;
+  transition: border-color 0.3s, transform 0.3s;
+}
+.review-card::before {
+  content: '"'; position: absolute; top: -0.5rem; right: 1.5rem;
+  font-family: 'Bebas Neue', sans-serif; font-size: 6rem; line-height: 1;
+  color: var(--laranja); opacity: 0.06; pointer-events: none;
+}
+.review-card:hover { border-color: rgba(204,26,26,0.2); transform: translateY(-4px); }
+.review-header { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1rem; }
+.review-avatar {
+  width: 42px; height: 42px; border-radius: 50%;
+  background: linear-gradient(135deg, rgba(204,26,26,0.25), rgba(204,26,26,0.08));
+  border: 0.5px solid rgba(204,26,26,0.25);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Bebas Neue', sans-serif; font-size: 0.9rem; letter-spacing: 1px;
+  color: var(--laranja); flex-shrink: 0;
+}
+.review-meta { flex: 1; }
+.review-name { font-size: 0.88rem; font-weight: 500; letter-spacing: 0.3px; }
+.review-date { font-size: 0.68rem; opacity: 0.3; margin-top: 0.15rem; letter-spacing: 0.5px; }
+.review-google-icon { opacity: 0.55; flex-shrink: 0; }
+.review-stars { color: #FBBC05; font-size: 0.9rem; letter-spacing: 2px; margin-bottom: 0.85rem; }
+.review-text { font-size: 0.85rem; line-height: 1.8; opacity: 0.6; }
+
+.carousel-controls { display: flex; align-items: center; justify-content: center; gap: 1.5rem; margin-top: 2.5rem; }
+.carousel-btn {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: rgba(255,255,255,0.04); border: 0.5px solid rgba(255,255,255,0.1);
+  color: var(--branco); opacity: 0.6; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: opacity 0.2s, border-color 0.2s, background 0.2s;
+}
+.carousel-btn:hover { opacity: 1; border-color: rgba(204,26,26,0.4); background: rgba(204,26,26,0.06); }
+.carousel-dots { display: flex; gap: 0.5rem; align-items: center; }
+.carousel-dot {
+  width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.15);
+  border: none; cursor: pointer; transition: background 0.3s, transform 0.3s; padding: 0;
+}
+.carousel-dot.active { background: var(--laranja); transform: scale(1.3); }
+.avaliacoes-cta { text-align: center; margin-top: 3rem; }
+.avaliacoes-cta .btn-ghost { display: inline-flex; align-items: center; gap: 0.6rem; }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 1100px) {
   .hero { grid-template-columns: 1fr; padding: 7rem 2rem 4rem; }
