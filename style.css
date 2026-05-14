@@ -678,7 +678,7 @@ nav.scrolled .nav-logo-img {
 }
 
 /* ═══════════════════════════════════════
-   NAV — aparece suave + link ativo
+   NAV — ESTILO MEDREGT: aparece suave + link ativo
 ═══════════════════════════════════════ */
 nav {
   /* Começa completamente transparente */
@@ -702,7 +702,7 @@ nav.scrolled {
   padding-bottom: 0.75rem !important;
 }
 
-/* Link ativo — indicador vermelho embaixo */
+/* Link ativo — indicador vermelho embaixo (igual Medre) */
 .nav-links a {
   position: relative;
   transition: opacity 0.2s ease, color 0.2s ease;
