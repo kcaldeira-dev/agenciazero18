@@ -737,7 +737,7 @@ nav.scrolled {
    FOOTER LOGO — ajuste para imagem
 ═══════════════════════════════════════ */
 .footer-logo {
-  display: flex;
+  display: background;
   align-items: center;
 }
 .footer-logo .footer-logo-img {
