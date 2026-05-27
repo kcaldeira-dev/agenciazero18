@@ -135,7 +135,6 @@ nav.scrolled {
   display: flex; align-items: center; gap: 2rem;
   margin-bottom: 2.5rem;
 }
-.trust-item {}
 .trust-val {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2.2rem; line-height: 1; color: var(--branco);
@@ -658,9 +657,15 @@ footer {
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  line-height: 0;
+  max-height: 58px;
+  overflow: hidden;
 }
+.nav-logo-wrap img,
 .nav-logo-img {
-  height: 36px;
+  height: 52px;
+  max-height: 52px;
+  max-width: 230px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -673,8 +678,10 @@ footer {
 }
 
 /* Navbar menor quando scrollada — logo acompanha */
+nav.scrolled .nav-logo-wrap img,
 nav.scrolled .nav-logo-img {
-  height: 30px;
+  height: 42px;
+  max-height: 42px;
 }
 
 /* ═══════════════════════════════════════
