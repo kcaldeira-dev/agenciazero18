@@ -1,0 +1,13 @@
+{
+  "name": "agencia-zero18-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site institucional da Agencia Zero18 com formulario e avaliacoes do Google.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
